@@ -1,9 +1,11 @@
-#!/bin/bash
-# download-assets.sh
+@echo off
+echo Downloading Unity WebGL build...
 
+mkdir Build
 
-# Download from your cloud storage
-curl -L "https://drive.google.com/file/d/1TKsxTRwKhCOtdX4QOlQAp4u0kwsWUMLY/view?usp=sharing" -o assets/Build.data.unityweb
-curl -L "https://drive.google.com/file/d/1nIPejdfviZ_CIjwN3Wgh8UXp7DRARyM0/view?usp=sharing" -o assets2/Build.data.unityweb
+curl -L "https://github.com/Unizori/My-personal-card/releases/download/1.0.0/1675bcd6b2cb7bd32a74efc4a176e13c.data.unityweb" -o Build/1675bcd6b2cb7bd32a74efc4a176e13c.data.unityweb
+curl -L "https://github.com/Unizori/My-personal-card/releases/download/1.0.0/51c6f8ca36b10639222676083d520732.data.unityweb" -o Build/51c6f8ca36b10639222676083d520732.data.unityweb
 
-echo "Assets downloaded!"
+echo.
+echo Download complete! You can now run the game.
+pause
